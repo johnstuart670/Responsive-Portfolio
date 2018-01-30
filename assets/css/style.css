@@ -323,36 +323,85 @@ input {
 @media screen and (max-width: 768px) {
 
 
-	header,
-	section, 
-	footer {
-		width: 96%;
-		margin: auto;
-		display: block;
-		margin-bottom: 5px;
-		justify-content: space-around;
-		height: auto;
-	}
 
-.contentWidth,
 .contentMain,
-.contentSidebar,
-.contentHeaderLinkWrap,
-	.contentH1Wrap,
-	.contentWidth{
+.contentSidebar {
 	width: 100%;
 	display: block;
 	margin: 0px;
 	text-align: center;
+	justify-content: space-between;
 }
+
+.contentWidth {
+	width: 100%;
+	display: flex;
+	margin: 0px;
+	text-align: center;
+	justify-content: space-between;
+}
+
+section, 
+footer {
+	width: 96%;
+	margin: auto;
+	margin-bottom: 5px;
+	justify-content: space-around;
+	height: auto;
+}
+
+.sectionWidth {
+	display:block;
+}
+
+header {
+	display: flex;
+	width: 96%;
+		margin: auto;
+		margin-bottom: 5px;
+		justify-content: space-around;
+		height: auto;
+}
+
+.contentHeaderLinkWrap,
+	.contentH1Wrap, {
+		width: 48%;
+		padding: 0px;
+		margin: 0px;
+		text-align: left;
+	}
+	
 
 .contentHeaderLinkWrap{
 	line-height: normal;
 	background-color: #ffffff;
 	height: auto;
-	margin: 10px 0px 10px 0px;
-
+	margin: 10px 0px 0px 0px;
+	text-align: center;
 }
 h1 {
 	margin: 0px;
+}
+form {
+	width:100%;
+	text-align: left;
+}
+input {
+	width: 100%;
+	display: block;
+}
+
+.tile {
+	width: 48%;
+	margin: 5px 0px 5px 0px;
+	padding:0px;
+}
+
+.tileCover {
+	bottom: -40px;
+}
+textarea {
+	width:100%;
+}
+
 }
