@@ -254,8 +254,9 @@ input, textarea, .uneditable-input {
 }
 
 
-
 @media screen and (max-width: 980px) {
+
+	/* items are bigger and blockier */
 	body,
 	header,
 	section,
@@ -274,23 +275,39 @@ input, textarea, .uneditable-input {
 		display: block;
 	}
 
+	/* styling tiles */
+
 	.tile {
 		height: 150px;
 		width: 100%;
 		padding: 5px;
 	}
 
+	/* New section so in smaller items we can flx/block
+	content for section tag still displays side by side
+	*/
+	.sectionWidth{
+		display: flex;
+		justify-content: space-between;
+	margin: 5px 10px 0px 10px;
+	}
+
 	.contentHeaderLinkWrap,
 	.contentH1Wrap{
 		text-align: center;
-		padding: 0px 0px 10px 0px;
-		width:25%;
+		padding: 0px;
+		width:35%;
 	}
 
-.contentMain,
-.contentH1Wrap{
+.contentMain {
 	width: 70%;
 	margin: 0px;
+}
+
+
+.contentH1Wrap {
+	margin: 0px;
+	text-align: center;
 }
 
 .contentSidebar {
@@ -299,6 +316,8 @@ input, textarea, .uneditable-input {
 
 section {
 	margin-top:5px;
+	justify-content: space-between;
+	margin: auto;
 }
 
 
@@ -342,36 +361,47 @@ input {
 }
 
 section, 
-footer {
-	width: 96%;
+ {
+	width: 98%;
 	margin: auto;
 	margin-bottom: 5px;
 	justify-content: space-around;
 	height: auto;
 }
 
+footer
+{
+	width: 100%;
+	margin: auto;
+	margin-bottom: 5px;
+	justify-content: space-around;
+	height: auto;
+}
+
+/* adding this b/c I can't get this to work otherwise */
 .sectionWidth {
 	display:block;
 }
-
+/* Items in header still display in-line */
 header {
 	display: flex;
-	width: 96%;
+	width: 100%;
 		margin: auto;
 		margin-bottom: 5px;
 		justify-content: space-around;
 		height: auto;
 }
 
+/* Resize the header to be a little more pleasing */
 .contentHeaderLinkWrap,
 	.contentH1Wrap, {
-		width: 48%;
+		width: 50%;
 		padding: 0px;
 		margin: 0px;
 		text-align: left;
 	}
 	
-
+/* style headerLinkWrap  */
 .contentHeaderLinkWrap{
 	line-height: normal;
 	background-color: #ffffff;
@@ -379,29 +409,82 @@ header {
 	margin: 10px 0px 0px 0px;
 	text-align: center;
 }
-h1 {
-	margin: 0px;
-}
-form {
-	width:100%;
-	text-align: left;
-}
+
 input {
 	width: 100%;
 	display: block;
 }
-
+/* Tiles are a different size on this width */
 .tile {
 	width: 48%;
 	margin: 5px 0px 5px 0px;
 	padding:0px;
 }
 
+/* Have to move the cover to match the shorter tiles */
 .tileCover {
 	bottom: -40px;
 }
+
+/* adjustments on the form entries */
 textarea {
 	width:100%;
 }
-
+/* Making the form take entire area */
+form {
+	width:100%;
+	text-align: left;
 }
+}
+
+@media screen and (max-width: 640px) {
+	/* items are bigger and blockier */
+	body,
+	header,
+	section,
+	.contentWidth,
+	footer,
+	p,
+	h2,
+	.iconWrap,
+	.portfolioWrap,
+	.contentForm,
+	.contentH1Wrap,
+	.contentHeaderLinkWrap,
+	.footerWrap
+	 {
+		width: 100%;
+		height: auto;
+		padding: 0px;
+		justify-content: space-around;
+		display: block;
+	}
+
+	.sectionWidth{
+		width: 96%;
+		margin: auto;
+	}
+
+	/* styling tiles */
+
+	.tile {
+		height: 150px;
+		width: 100%;
+		padding: 5px;
+	}
+
+	.imageSelfie{
+		padding: 5px 5px 5px 5px;
+	}
+
+
+footer
+{
+	width: 100%;
+	margin: auto;
+	margin-bottom: 5px;
+	justify-content: space-around;
+	height: auto;
+}
+}
+
