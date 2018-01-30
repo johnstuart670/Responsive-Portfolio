@@ -222,7 +222,7 @@ footer {
 /* Input Form */
 
 input[type=text], select, textarea {
-	width: 580px;
+	width: 80%px;
 	padding: 8px;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
@@ -249,44 +249,58 @@ input[type=submit] {
 	letter-spacing: 1px;
 }
 
+input, textarea, .uneditable-input {
+	width: 80%;
+}
+
 
 
 @media screen and (max-width: 980px) {
 	body,
 	header,
 	section,
-	.contentSidebar,
 	.contentWidth,
-	.contentHeaderLinkWrap,
-	.contentH1Wrap,
 	footer,
 	p,
 	h2,
-	.iconWrap
+	.iconWrap,
+	.portfolioWrap,
+	.contentForm,
 	 {
 		width: 100%;
-		display: block;
 		height: auto;
 		padding: 0px;
+		justify-content: space-around;
+		display: block;
+	}
+
+	.tile {
+		height: 150px;
+		width: 100%;
+		padding: 5px;
 	}
 
 	.contentHeaderLinkWrap,
 	.contentH1Wrap{
-		line-height: 0px;
 		text-align: center;
-		padding: 10px 0px 10px 0px;
+		padding: 0px 0px 10px 0px;
+		width:25%;
 	}
 
-.contentMain {
-	width:98%;
+.contentMain,
+.contentH1Wrap{
+	width: 70%;
 	margin: 0px;
-	margin-left: 3px;
 }
 
-.contentMain, {
-padding: 0px 5px 0px 5px;
-margin: 0px 5px 0px 5px;
+.contentSidebar {
+	margin: 0px;
 }
+
+section {
+	margin-top:5px;
+}
+
 
 	header {
 		position: static;
@@ -296,4 +310,15 @@ margin: 0px 5px 0px 5px;
 		padding: 5px;
 	}
 
+form {
+	width:100%;
 }
+input {
+	width: 25%;
+	display: block;
+}
+
+}
+
+
+
