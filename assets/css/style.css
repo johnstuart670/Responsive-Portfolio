@@ -320,5 +320,39 @@ input {
 
 }
 
+@media screen and (max-width: 768px) {
 
 
+	header,
+	section, 
+	footer {
+		width: 96%;
+		margin: auto;
+		display: block;
+		margin-bottom: 5px;
+		justify-content: space-around;
+		height: auto;
+	}
+
+.contentWidth,
+.contentMain,
+.contentSidebar,
+.contentHeaderLinkWrap,
+	.contentH1Wrap,
+	.contentWidth{
+	width: 100%;
+	display: block;
+	margin: 0px;
+	text-align: center;
+}
+
+.contentHeaderLinkWrap{
+	line-height: normal;
+	background-color: #ffffff;
+	height: auto;
+	margin: 10px 0px 10px 0px;
+
+}
+h1 {
+	margin: 0px;
+}
